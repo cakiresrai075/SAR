@@ -58,6 +58,6 @@ Tüm eğitim süreçleri Google Colab platformunda gerçekleştirilmiştir. Eği
 !pip install -r requirements.txt 
 !!! eğitim için YOLOv5 deposunu klonlayn
 
-# İletişim Soru
+# İletişim
 
 cakiresra140@gmail.com
