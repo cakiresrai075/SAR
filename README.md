@@ -5,7 +5,7 @@ Bu repository, Sentetik Açıklıklı Radar (SAR) görüntülerinde hedef tespit
 
 # SSDD – SAR Ship Detection Dataset
 
-SSDD veri kümesi, SAR görüntülerinde gemi tespiti için yaygın olarak kullanılan bir referans veri setidir. RadarSat-2, TerraSAR-X ve Sentinel-1 gibi farklı SAR sensörlerinden elde edilen görüntüler içermektedir. Veri kümesi toplamda 1,160 görüntü ve 2,456 gemi hedefi içermektedir
+SSDD veri kümesi, SAR görüntülerinde gemi tespiti için yaygın olarak kullanılan bir referans veri kümesidir. RadarSat-2, TerraSAR-X ve Sentinel-1 gibi farklı SAR sensörlerinden elde edilen görüntüler içermektedir. Veri kümesi toplamda 1,160 görüntü ve 2,456 gemi hedefi içermektedir
 Veri Kümesi İndirme Bağlantısı: https://github.com/TianwenZhang0825/Official-SSDD
 T. Zhang et al., "SAR Ship Detection Dataset (SSDD): Official Release and Comprehensive Data Analysis," Remote Sens., vol. 13, no. 18, pp. 1–41, 2021, Art. no. 3690.
 
