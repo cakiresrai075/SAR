@@ -29,7 +29,7 @@ Veri Kümesi İndirme Bağlantısı: https://radars.ac.cn/web/data/getData?newsC
 
 WANG Zhirui, KANG Yuzhuo, ZENG Xuan, et al. SAR-AIRcraft-1.0: High-resolution SAR aircraft detection and recognition dataset[J]. Journal of Radars, 2023, 12(4): 906–922. doi: 10.12000/JR23043
 
-(indirmede sorun yaşarsanız sorunlarınızı söyleyebilirsiniz) cakiresra140@gmail.com
+(indirmede sorun yaşarsanız sorunlarınızı söyleyebilirsiniz) 
 
 
 ## SAR-AIRcraft-1.0 – Tespit Sonuçları
@@ -49,7 +49,7 @@ Pytorch-CAM Kütüphanesi: https://github.com/jacobgil/pytorch-grad-cam
 
 
 # Eğitim Ortamı
-Tüm eğitim süreçleri Google Colab platformunda gerçekleştirilmiştir. Eğitimler sırasında NVIDIA A100 GPU kullanılmış, PyTorch framework'ü üzerinden Python programlama dili ile kodlanmıştır. Eğitim sırasında mosaic augmentation, copy-paste augmentation, erken durdurma (early stopping) ve özelleştirilmiş hiperparametreler kullanılarak modelin SAR görüntülerine özgü özelliklerini öğrenmesi sağlanmıştır. Tüm deneyler tekrarlanabilir olacak şekilde yapılandırılmış ve sonuçlar detaylı metriklerle raporlanmıştır.
+Tüm eğitim süreçleri Google Colab platformunda gerçekleştirilmiştir. Eğitimler sırasında NVIDIA A100 GPU kullanılmış, PyTorch framework'ü üzerinden Python programlama dili ile kodlanmıştır. Eğitim sırasında mosaic augmentation, copy-paste augmentation, erken durdurma (early stopping) ve özelleştirilmiş hiperparametreler kullanılarak modelin SAR görüntülerine özgü özelliklerini öğrenmesi sağlanmıştır. Tüm deneyler tekrarlanabilir olacak şekilde yapılandırılmış ve sonuçlar detaylı metriklerle raporlanmıştır. Raporu incelemek isterseniz iletişime geçebilirsiniz.
 
 
 # YOLOv5 deposunu klonlayın
@@ -57,3 +57,7 @@ Tüm eğitim süreçleri Google Colab platformunda gerçekleştirilmiştir. Eği
 %cd yolov5
 !pip install -r requirements.txt 
 !!! eğitim için YOLOv5 deposunu klonlayn
+
+# İletişim Soru
+
+cakiresra140@gmail.com
