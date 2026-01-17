@@ -185,7 +185,7 @@ class BaseCAM:
                 eigen_smooth
             )
             
-            cam = np.maximum(cam, 0)
+            cam = np.maximum(cam, 0)  #ReLU
             cam_per_target_layer.append(cam)
         
         return cam_per_target_layer
