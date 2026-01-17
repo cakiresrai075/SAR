@@ -19,9 +19,9 @@ from models.common import DetectMultiBackend
 # CONFIGURATION
 # =========================
 #yollar
-WEIGHTS = "/content/drive/MyDrive/SAR/SAR_AIRcraft_1_0_yolov5/aircraft_v5X_1024/weights/best.pt"
-IMG_DIR = "/content/drive/MyDrive/SAR/SAR_AIRcraft_1_0/images/test"
-OUT_DIR = "/content/drive/MyDrive/CAM_OUT/AIRCRAFT/EIGENCAM"
+WEIGHTS = "/content/drive/MyDrive/SAR/SSDD_yolov5/train/weights/best.pt"
+IMG_DIR = "/content/drive/MyDrive/SAR/SSDD/images/test"
+OUT_DIR = "/content/drive/MyDrive/CAM_OUT/SSDD/Eigencam"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # Settings
