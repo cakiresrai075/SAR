@@ -28,7 +28,7 @@ Veri Kümesi İndirme Bağlantıları: https://radars.ac.cn/web/data/getData?new
 
 WANG Zhirui, KANG Yuzhuo, ZENG Xuan, et al. SAR-AIRcraft-1.0: High-resolution SAR aircraft detection and recognition dataset[J]. Journal of Radars, 2023, 12(4): 906–922. doi: 10.12000/JR23043
 
-(indirmede sorun yaşarsanız sorunlarınızı söyleyebilirsiniz)
+(indirmede sorun yaşarsanız sorunlarınızı söyleyebilirsiniz) cakiresra140@gmail.com
 
 
 ## SAR-AIRcraft-1.0 – Tespit Sonuçları
