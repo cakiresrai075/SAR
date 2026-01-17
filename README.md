@@ -10,6 +10,12 @@ Veri Kümesi İndirme Bağlantısı: https://github.com/TianwenZhang0825/Officia
 T. Zhang et al., "SAR Ship Detection Dataset (SSDD): Official Release and Comprehensive Data Analysis," Remote Sens., vol. 13, no. 18, pp. 1–41, 2021, Art. no. 3690.
 
 
+## SSDD – Detection Results
+
+<img width="856" height="531" alt="image" src="https://github.com/user-attachments/assets/e83492a6-ca7b-48e9-ba7f-f281a3e84e7d" />
+
+
+
 # SAR-AIRcraft-1.0 Dataset
 
 SAR-AIRcraft-1.0 veri kümesi, Çin'in Gaofen-3 (GF-3) SAR uydusundan elde edilen yüksek çözünürlüklü görüntülerde uçak tespiti ve sınıflandırması için oluşturulmuştur. Veri seti 4,368 görüntü ve toplam 16,463 uçak örneği içermektedir. Görüntü boyutları 800×800 piksel ile 1500×1500 piksel arasında değişmekte olup 7 farklı uçak sınıfı bulunmaktadır: A220, A320/321, A330, ARJ21, Boeing737, Boeing787 ve Other. Bu veri kümesi, SAR görüntülerinde çok sınıflı hedef tespiti için geliştirilmiş en kapsamlı açık kaynak veri kümelerinden biridir.
