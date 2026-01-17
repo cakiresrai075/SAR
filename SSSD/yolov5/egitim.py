@@ -13,7 +13,7 @@ DATA_YAML = "/content/drive/MyDrive/SAR/SSDD/data.yaml"  # <-- yolu uyarla
 HYP_PATH = "/content/drive/MyDrive/SAR/hyp.yaml"
 
 # output project folder
-PROJECT_DIR = "/content/drive/MyDrive/SAR/SSDD_yolov5"
+PROJECT_DIR = "/content/drive/MyDrive/SAR/SSDD_yolov5/SSDD"
 
 # TRAINING SETTINGS
 IMG_SIZE = 1024
@@ -21,7 +21,7 @@ BATCH = 16
 EPOCHS = 300
 PATIENCE = 30
 WEIGHTS = "yolov5s.pt"  # pretrained
-NAME = "SSDD"
+NAME = "train"
 WORKERS = 8
 CACHE = True  # --cache
 
