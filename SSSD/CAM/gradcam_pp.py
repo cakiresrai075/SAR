@@ -30,7 +30,7 @@ ALPHA = 0.55
 N_IMAGES = 100 #deneme hepsini görmek için None
 
 # Target layers (YOLOv5 backbone + neck layers)
-TARGET_LAYERS = [8, 9, 17, 20, 22, 23]  # deneme sonucu en iyi last con 456. satır
+TARGET_LAYERS = [8, 9, 17, 20, 22, 23]  # deneme sonucu en iyi sonuç 22
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Grad-CAM++ LogSumExp target
