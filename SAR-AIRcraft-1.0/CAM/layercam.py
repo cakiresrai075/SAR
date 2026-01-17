@@ -15,21 +15,20 @@ import torch.nn as nn
 from typing import List, Callable, Optional
 from models.common import DetectMultiBackend
 
-# =========================
-# CONFIGURATION
-# =========================
-WEIGHTS = "/content/drive/MyDrive/SARDet_Results_AIRCRAFTX/aircraft_v5X_1024/weights/best.pt"
-IMG_DIR = "/content/YOLO_AIRCRAFT/YOLO_AIRCRAFT/images/test"
-OUT_DIR = "/content/drive/MyDrive/CAM_OUT/AIRCRAFT_LAYERCAM"
+
+#yollar
+WEIGHTS = "/content/drive/MyDrive/SAR/SAR_AIRcraft_1_0_yolov5/aircraft_v5X_1024/weights/best.pt"
+IMG_DIR = "/content/drive/MyDrive/SAR/SAR_AIRcraft_1_0/images/test"
+OUT_DIR = "/content/drive/MyDrive/CAM_OUT/AIRCRAFT/LAYERCAM"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # Settings
 IMG_SIZE = 1024
 ALPHA = 0.55
-N_IMAGES = 100
+N_IMAGES = 100 #deneme hepsini görmek için None
 
 # Target layers (YOLOv5 backbone + neck layers)
-TARGET_LAYERS = [8, 9, 17, 20, 22, 23]
+TARGET_LAYERS = [8, 9, 17, 20, 22, 23]  # deneme sonucu en iyi 23
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
@@ -448,8 +447,15 @@ def run():
         os.makedirs(os.path.join(OUT_DIR, layer_name, "overlay"), exist_ok=True)
     
     # Get image list
-    imgs = sorted(glob.glob(os.path.join(IMG_DIR, "*.*")))[:N_IMAGES]
-        
+    all_imgs = sorted(glob.glob(os.path.join(IMG_DIR, "*.*")))
+    imgs = all_imgs if N_IMAGES is None else all_imgs[:N_IMAGES]
+    
+    print(f"\n[INFO] Processing {len(imgs)} images")
+    print(f"[INFO] Target layers: {target_names}")
+    print(f"[INFO] Method: LayerCAM")
+    print(f"[INFO] Output directory: {OUT_DIR}")
+    print("=" * 60)
+    
     targets = [YOLOGlobalTarget()]
     
     # Process images
@@ -478,7 +484,7 @@ def run():
             print(f"❌ Error processing {name}: {e}")
     
     print("\n" + "=" * 60)
-    print(f"✅ DONE! Results saved to: {OUT_DIR}")
+    print(f"DONE! Results saved to: {OUT_DIR}")
     print("=" * 60)
 
 
