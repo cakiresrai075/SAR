@@ -20,9 +20,9 @@ from models.common import DetectMultiBackend
 # CONFIGURATION
 # =========================
 #yollar
-WEIGHTS = "/content/drive/MyDrive/SAR/SAR_AIRcraft_1_0_yolov5/aircraft_v5X_1024/weights/best.pt"
-IMG_DIR = "/content/drive/MyDrive/SAR/SAR_AIRcraft_1_0/images/test"
-OUT_DIR = "/content/drive/MyDrive/CAM_OUT/AIRCRAFT/SCORECAM"
+WEIGHTS = "/content/drive/MyDrive/SAR/SSDD_yolov5/train/weights/best.pt"
+IMG_DIR = "/content/drive/MyDrive/SAR/SSDD/images/test"
+OUT_DIR = "/content/drive/MyDrive/CAM_OUT/SSDD/ScoreCAM"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # Settings
@@ -159,7 +159,7 @@ class BaseCAM:
                 None  # No gradients for Score-CAM
             )
             
-            cam = np.maximum(cam, 0)
+            cam = np.maximum(cam, 0) #ReLU
             cam_per_target_layer.append(cam)
         
         return cam_per_target_layer
@@ -462,7 +462,7 @@ def run():
                 cv2.imwrite(out_path, overlay_cam(img0, cam, ALPHA))
         
         except Exception as e:
-            print(f"❌ Error processing {name}: {e}")
+            print(f"Error processing {name}: {e}")
     
     print("\n" + "=" * 60)
     print(f"DONE! Results saved to: {OUT_DIR}")
