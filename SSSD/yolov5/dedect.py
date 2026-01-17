@@ -4,7 +4,7 @@ from pathlib import Path
 #yollar
 YOLOV5_DIR = Path("/content/yolov5")
 
-WEIGHTS = Path("/content/drive/MyDrive/SAR/SSDD_yolov5/weights/best.pt")
+WEIGHTS = Path("/content/drive/MyDrive/SAR/SSDD_yolov5/SSDD/train/weights/best.pt")
 SOURCE  = Path("/content/drive/MyDrive/SAR/SSDD/SSDD/images/test")
 
 PROJECT_DIR = Path("/content/drive/MyDrive/SAR/SSDD_yolov5")
