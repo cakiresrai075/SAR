@@ -189,7 +189,7 @@ class BaseCAM:
                 eigen_smooth
             )
             
-            cam = np.maximum(cam, 0)
+            cam = np.maximum(cam, 0) #RELU
             cam_per_target_layer.append(cam)
         
         return cam_per_target_layer
@@ -481,7 +481,7 @@ def run():
                 print(f"[PROGRESS] {idx}/{len(imgs)} images processed")
         
         except Exception as e:
-            print(f"❌ Error processing {name}: {e}")
+            print(f"Error processing {name}: {e}")
     
     print("\n" + "=" * 60)
     print(f"DONE! Results saved to: {OUT_DIR}")
