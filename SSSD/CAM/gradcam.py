@@ -1,6 +1,6 @@
-# YOLOv5 Grad-CAM for SAR Aircraft Detection
+# YOLOv5 Grad-CAM for SSDD
 # Method: Grad-CAM
-# Dataset: SAR-AIRcraft-1.0
+# Dataset: SSDD
 # Reference: https://github.com/jacobgil/pytorch-grad-cam
 
 import os
@@ -346,7 +346,7 @@ def load_image_no_pad(path):
     h0, w0 = img0.shape[:2]
     img = cv2.resize(img0, (IMG_SIZE, IMG_SIZE), interpolation=cv2.INTER_LINEAR)
     img = img[:, :, ::-1].transpose(2, 0, 1)
-    img = np.ascontiguousarray(img)
+    img = np.ascontiguouray(img)
     
     x = torch.from_numpy(img).float().to(DEVICE) / 255.0
     return x.unsqueeze(0), img0, (h0, w0)
@@ -382,7 +382,7 @@ def find_last_conv(net):
 # =========================
 def run():
     print("=" * 60)
-    print("YOLOv5 Grad-CAM for SAR Aircraft Detection")
+    print("YOLOv5 Grad-CAM for SSDD")
     print("=" * 60)
     
     # Load model
