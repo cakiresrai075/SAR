@@ -5,10 +5,10 @@ from pathlib import Path
 #yollar
 YOLOV5_DIR = "/content/yolov5"  # README.md: yolov5 clone/install
 
-DATA_YAML = "/content/drive/MyDrive/SAR/SAR_AIRcraft-1_0/data.yaml"
-HYP_PATH  = "/content/drive/MyDrive/SAR/SAR_AIRcraft-1_0/hyp.aircraft.yaml"
+DATA_YAML = "/content/drive/MyDrive/SAR/SAR_AIRcraft_1_0/data.yaml"
+HYP_PATH  = "/content/drive/MyDrive/SAR/SAR_AIRcraft_1_0/hyp.aircraft.yaml"
 
-PROJECT_DIR = "/content/drive/MyDrive/SAR/SAR_AIRcraft-1_0_yolov5"
+PROJECT_DIR = "/content/drive/MyDrive/SAR/SAR_AIRcraft_1_0_yolov5"
 NAME = "aircraft_v5X_1024"
 
 #eğitim
